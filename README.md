@@ -33,7 +33,7 @@ python3 auto_grade_input.py --email a.nguyenvan@hust.edu.vn --password 123456 --
 
 3. Nhập mã captcha: có 8 giây để đọc và gõ mã captcha vào ô. Gõ xong chờ đủ 8 giây để chương trình tiếp tục chạy. Nhớ **KHÔNG** được ấn nút **Đăng nhập**! 
 
-4. Mọi thứ tiếp tục được chạy tự động, không can thiệp vào cửa sổ trình duyệt trong quá trình chạy. Sau khi bot chạy xong, cần kiểm tra kỹ lại các điểm đã nhập trước khi nộp điểm cho trường.   
+4. Mọi thứ tiếp tục được chạy tự động, không can thiệp vào cửa sổ trình duyệt trong quá trình chạy. Sau khi bot chạy xong, cần kiểm tra kỹ lại các điểm đã nhập. Bot không tự động nộp điểm, cần kiểm tra cẩn thận trước khi ấn nút gửi điểm cho trường.   
 
 **Lưu ý:** Chương trình sẽ hiển thị thông tin những sinh viên có trong file csv những không tìm thấy trong ctt-sis để nhập điểm. 
 
