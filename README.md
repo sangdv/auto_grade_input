@@ -42,4 +42,4 @@ python3 auto_grade_input.py --email a.nguyenvan@hust.edu.vn --password 123456 --
 
 **Lưu ý:** Chương trình sẽ hiển thị thông tin những sinh viên có trong file csv những không tìm thấy trong ctt-sis để nhập điểm. 
 
-5. Ấn phím bất kỳ trên console chạy lệnh để thoát.
+5. Ấn phím bất kỳ trên console để thoát.

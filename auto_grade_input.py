@@ -85,7 +85,7 @@ def auto_mark_input(opt):
         else:
             print('Khong tim thay sinh vien co mssv ' + stud_id_lst[i])
             
-    input('Press a key to exit... ')
+    input('Press any key to exit... ')
     driver.close()
 
 def main():
