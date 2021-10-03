@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 
-def readfile(path):
+def read_file(path):
     df = pd.read_csv(path, sep=';', engine='python')
     grade_lst = [str(score).replace(",", ".") for score in df.iloc[:,1]]
     stud_id_lst = [str(stud_id) for stud_id  in df.iloc[:,0]]
@@ -56,7 +56,6 @@ def auto_mark_input(opt):
     driver.implicitly_wait(5)
     time.sleep(2)
 
-
     # Tim table nhap diem va dem so luong sinh vien
     input_mark_table = driver.find_elements_by_xpath("//html/body/form/div[5]/section[2]/div[2]/div[2]/table/tbody/tr/td/div/div[1]/div[2]/table/tbody/tr/td/table[2]/tbody/tr")
 
@@ -68,7 +67,7 @@ def auto_mark_input(opt):
         dict[stud_id.text] = i
 
     # Doc diem tu csv
-    grade_lst, stud_id_lst = readfile(opt.gradefile)
+    grade_lst, stud_id_lst = read_file(opt.gradefile)
 
     # Nhap diem tu csv
     for i in range(len(stud_id_lst)):
