@@ -15,7 +15,7 @@ mssv;grade
 20204877;6,5  
 ```
 
-2. Copy đoạn code sau để bắt đầu nhập điểm tự động:
+2. Copy đoạn code sau vào console của python để bắt đầu quá trình nhập điểm tự động:
 ```
 python3 auto_grade_input.py --email EMAIL_TRUONG --password MAT_KHAU --classcode MA_LOP_HOC --gradefile CSV_PATH
 ```
@@ -32,4 +32,7 @@ python3 auto_grade_input.py --email a.nguyenvan@hust.edu.vn --password 123456 --
 
 **Lưu ý:** Chương trình sẽ hiển thị thông tin những sinh viên có trong file csv những không tìm thấy trong ctt-sis để nhập điểm. 
 
-3. Ấn phím bất kỳ để kết thúc việc nhập điểm
+3. Nhập mã captcha: có 8 giây để đọc và gõ mã captcha vào ô. Gõ xong chờ đủ 8 giây để chương trình tiếp tục chạy. Nhớ **KHÔNG** được ấn nút Đăng nhập! 
+
+4. Mọi thứ tiếp tục được chạy tự động, không can thiệp vào cửa sổ trình duyệt trong quá trình chạy. Sau khi bot chạy xong, có thể kiểm tra lại điểm đã nhập và nộp điểm cho trường. 
+5. Ấn phím bất kỳ trên console chạy lệnh để thoát.

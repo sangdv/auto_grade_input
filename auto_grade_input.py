@@ -32,7 +32,7 @@ def auto_mark_input(opt):
     password.send_keys(Keys.RETURN)
 
     # Dung 5 giay de nguoi dung nhap captcha
-    time.sleep(5)
+    time.sleep(8)
 
     # Tu dong an nut dang nhap
     button = driver.find_element_by_id("ctl00_ctl00_contentPane_MainPanel_MainContent_btLogin")
