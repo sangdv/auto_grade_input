@@ -77,14 +77,14 @@ def auto_mark_input(opt):
                 continue
 
         if stud_id_lst[i] in dict.keys():
-            row_idx = dict[str(stud_id_lst[i])]
+            row_idx = dict[stud_id_lst[i]]
             tbl = driver.find_element_by_id("ctl00_ContentHolder_pnHolder_cpASPxCallbackPanel_gvInputMarks_cell" + str(row_idx) + "_5_tbGradeInput_I")
             tbl.clear()
             tbl.send_keys(grade_lst[i])
             tbl.send_keys(Keys.RETURN)
             time.sleep(0.5)
         else:
-            print('Khong tim thay sinh vien co mssv ' + str(stud_id_lst[i]))
+            print('Khong tim thay sinh vien co mssv ' + stud_id_lst[i])
             
     input('Press a key to exit... ')
     driver.close()
@@ -98,6 +98,5 @@ def main():
     opt = parser.parse_args()
     auto_mark_input(opt)
     
-
 if __name__ == "__main__":
     main()
