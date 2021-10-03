@@ -17,17 +17,18 @@ mssv;grade
 
 2. Copy đoạn code sau để bắt đầu nhập điểm tự động:
 ```
-python3 auto_mark_input.py \
-    --email EMAIL_TRUONG \
-    --password MAT_KHAU \
-    --classcode MA_LOP_HOC \ 
-    --gradefile CSV_PATH
+python3 auto_grade_input.py --email EMAIL_TRUONG --password MAT_KHAU --classcode MA_LOP_HOC --gradefile CSV_PATH
 ```
 Trong đó:  
-- EMAIL_TRUONG là email do trường cung cấp  
-- MAT_KHAU là mật khẩu để đăng nhập vào hệ thống ctt-sis  
-- MA_LOP_HOC là mã lớp học cần nhập điểm. Nếu nhập điểm quá trình nhớ thêm chữ "q" vào trước, chẳng hạn, "q119499". Nếu nhập điểm cuối kỳ chỉ cần nhập mã lớp học.  
-- CSV_PATH là đường dẫn tới file csv chứa điểm và mssv đã tạo ở bước 1. Nếu file csv cùng thư mục với file auto_mark_input.py thì chỉ cần nhập tên file csv.  
+- **EMAIL_TRUONG** là email do trường cung cấp  
+- **MAT_KHAU** là mật khẩu để đăng nhập vào hệ thống ctt-sis  
+- **MA_LOP_HOC** là mã lớp học cần nhập điểm. Nếu nhập điểm quá trình nhớ thêm chữ "q" vào trước, chẳng hạn, "q119435". Nếu nhập điểm cuối kỳ chỉ cần nhập mã lớp học.  
+- **CSV_PATH** là đường dẫn tới file csv chứa điểm và mssv đã tạo ở bước 1. Nếu file csv cùng thư mục với file auto_mark_input.py thì chỉ cần nhập tên file csv.
+
+Ví dụ:
+```
+python3 auto_grade_input.py --email a.nguyenvan@hust.edu.vn --password 123456 --classcode q119435 --gradefile grade.csv
+```
 
 **Lưu ý:** Chương trình sẽ hiển thị thông tin những sinh viên có trong file csv những không tìm thấy trong ctt-sis để nhập điểm. 
 
