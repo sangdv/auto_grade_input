@@ -8,7 +8,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 def readfile(path):
     df = pd.read_csv(path, sep=';', engine='python')
-    grade_lst = [ str(score).replace(",",".") for score in df.iloc[:,1]]
+    grade_lst = [str(score).replace(",", ".") for score in df.iloc[:,1]]
     stud_id_lst = [str(stud_id) for stud_id  in df.iloc[:,0]]
 
     return grade_lst, stud_id_lst
@@ -31,7 +31,7 @@ def auto_mark_input(opt):
     password.send_keys(opt.password)
     password.send_keys(Keys.RETURN)
 
-    # Dung 5 giay de nguoi dung nhap captcha
+    # Dung vai giay de nguoi dung nhap captcha
     time.sleep(8)
 
     # Tu dong an nut dang nhap
@@ -64,8 +64,8 @@ def auto_mark_input(opt):
     dict = {}
     for i in range(len(input_mark_table) - 1):
         xpath_str = "//*[@id='ctl00_ContentHolder_pnHolder_cpASPxCallbackPanel_gvInputMarks_DXDataRow" + str(i) +"']/td[2]"
-        mssv = driver.find_element_by_xpath(xpath_str)
-        dict[mssv.text] = i
+        stud_id = driver.find_element_by_xpath(xpath_str)
+        dict[stud_id.text] = i
 
     # Doc diem tu csv
     grade_lst, stud_id_lst = readfile(opt.gradefile)
