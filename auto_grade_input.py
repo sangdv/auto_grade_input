@@ -8,10 +8,10 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 def read_file(path):
     df = pd.read_csv(path, sep=';', engine='python')
-    grade_lst = [str(score).replace(",", ".") for score in df.iloc[:,1]]
     stud_id_lst = [str(stud_id) for stud_id  in df.iloc[:,0]]
+    grade_lst = [str(score).replace(",", ".") for score in df.iloc[:,1]]
 
-    return grade_lst, stud_id_lst
+    return stud_id_lst, grade_lst
 
 def auto_mark_input(opt):
     # Dang nhap website ctt-sis
@@ -67,7 +67,7 @@ def auto_mark_input(opt):
         dict[stud_id.text] = i
 
     # Doc diem tu csv
-    grade_lst, stud_id_lst = read_file(opt.gradefile)
+    stud_id_lst, grade_lst = read_file(opt.gradefile)
 
     # Nhap diem tu csv
     for i in range(len(stud_id_lst)):
