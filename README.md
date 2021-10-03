@@ -1,10 +1,15 @@
 # I. Hướng dẫn cài đặt  
 1. Cài đặt python3: https://www.python.org/downloads/  
-2. Cài đặt các gói cần thiết 
+2. Clone code về máy:  
+```
+git clone https://github.com/sangdv/auto_grade_input.git && cd auto_grade_input
+```
+
+3. Cài đặt các gói cần thiết 
 ``` 
 pip3 install -r requirements.txt  
 ```
-3. Cài đặt trình duyệt chrome (nếu chưa có)
+4. Cài đặt trình duyệt chrome (nếu chưa có)
 
 # II. Auto nhập điểm  
 1. Chuẩn bị nội dung file csv gồm 2 cột có tiêu đề là *mssv* và *grade*. Cột *mssv* chứa danh sách các mã số sinh viên, cột *grade* chứa điểm sinh viên. Sử dụng ";" làm dấu ngăn cách các giá trị trong csv.
