@@ -63,7 +63,7 @@ def auto_mark_input(opt):
     # Luu danh sach mssv va index tuong ung tren ctt-sis
     dict = {}
     for i in range(len(input_mark_table) - 1):
-        xpath_str = "//*[@id='ctl00_ContentHolder_pnHolder_cpASPxCallbackPanel_gvInputMarks_DXDataRow" + str(i) +"']/td[2]"
+        xpath_str = "//*[@id='ctl00_ContentHolder_pnHolder_cpASPxCallbackPanel_gvInputMarks_DXDataRow" + str(i) + "']/td[2]"
         stud_id = driver.find_element_by_xpath(xpath_str)
         dict[stud_id.text] = i
 
