@@ -15,9 +15,13 @@ mssv;grade
 20204877;6,5  
 ```
 
-2. Chạy lệnh sau để bắt đầu nhập điểm tự động:
+2. Copy đoạn code sau để bắt đầu nhập điểm tự động:
 ```
-python3 auto_mark_input.py --email EMAIL_TRUONG --password MAT_KHAU --classcode MA_LOP_HOC --gradefile CSV_PATH
+python3 auto_mark_input.py \
+    --email EMAIL_TRUONG \
+    --password MAT_KHAU \
+    --classcode MA_LOP_HOC \ 
+    --gradefile CSV_PATH
 ```
 Trong đó:  
 - EMAIL_TRUONG là email do trường cung cấp  
