@@ -4,6 +4,7 @@
 ``` 
 pip3 install -r requirements.txt  
 ```
+3. Cài đặt trình duyệt chrome (nếu chưa có)
 
 # II. Auto nhập điểm  
 1. Chuẩn bị nội dung file csv gồm 2 cột có tiêu đề là *mssv* và *grade*. Cột *mssv* chứa danh sách các mã số sinh viên, cột *grade* chứa điểm sinh viên. Sử dụng ";" làm dấu ngăn cách các giá trị trong csv.
