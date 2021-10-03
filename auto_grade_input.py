@@ -1,9 +1,9 @@
-from os import read
 import pandas as pd
+import time
 import argparse
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import time
 from selenium.webdriver.common.action_chains import ActionChains
 
 def readfile(path):
